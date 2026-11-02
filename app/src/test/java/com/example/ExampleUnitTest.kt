@@ -1,16 +1,26 @@
 package com.example
 
-import org.junit.Assert.*
+import com.example.data.RepoExtractorService
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class ExampleUnitTest {
-  @Test
-  fun addition_isCorrect() {
-    assertEquals(4, 2 + 2)
-  }
+
+    @Test
+    fun parseOwnerAndRepo_handlesGitUrlAndShortSyntax() {
+        val service = RepoExtractorService()
+        val (owner1, repo1) = service.parseOwnerAndRepo(
+            "https://github.com/Dranixx/tachiyomi-extensions-apk.git",
+            "fallback"
+        )
+        assertEquals("Dranixx", owner1)
+        assertEquals("tachiyomi-extensions-apk", repo1)
+
+        val (owner2, repo2) = service.parseOwnerAndRepo(
+            "keiyoushi/extensions",
+            "fallback"
+        )
+        assertEquals("keiyoushi", owner2)
+        assertEquals("extensions", repo2)
+    }
 }
