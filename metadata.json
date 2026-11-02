@@ -1,0 +1,6 @@
+{
+  "name": "TachiRepo Explorer",
+  "description": "Extract and explore the Dranixx/tachiyomi-extensions-apk GitHub repository, inspect index.min.json extension metadata, browse repository files, and open external web links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

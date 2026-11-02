@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TachiRepo</string>
+    <string name="repo_title">Dranixx / tachiyomi-extensions-apk</string>
+    <string name="repo_subtitle">مستخرج ومستكشف مستودع إضافات تاتشيومي من GitHub</string>
+    <string name="tab_extensions">الإضافات (Index)</string>
+    <string name="tab_files">ملفات GitHub</string>
+    <string name="tab_setup">الروابط والإعداد</string>
+    <string name="search_hint">ابحث عن إضافة، حزمة، أو مصدر...</string>
+    <string name="open_in_browser">فتح في المتصفح</string>
+    <string name="copy_url">نسخ الرابط</string>
+    <string name="sync_repo">تحديث من GitHub</string>
+    <string name="compliance_notice">ملاحظة التوافق: تم استخدام فتح الروابط الخارجية عبر المتصفح بدلاً من تثبيت حزم APK المباشر داخل التطبيق للتوافق مع سياسات Google Play Creator Program.</string>
+</resources>
